@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SequeniaFilmExplorer</string>
+    <string name="back">Назад</string>
+    <string name="film_poster">Постер</string>
+    <string name="txt_films">Фильмы</string>
+    <string name="txt_genres">Жанры</string>
+    <string name="txt_details">Детали фильма</string>
+    <string name="film">film</string>
+    <string name="btn_repeat">ПОВТОРИТЬ</string>
+    <string name="txt_network_error">Ошибка подключения к сети</string>
+    <string name="rating_kinopoisk">%1$s КиноПоиск</string>
+    <string name="n_a_rating_kinopoisk">N/A КиноПоиск</string>
+</resources>

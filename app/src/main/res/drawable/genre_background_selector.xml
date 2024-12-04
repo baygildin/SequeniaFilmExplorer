@@ -1,0 +1,3 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/genre_selected_background" android:state_selected="true" />
+</selector>

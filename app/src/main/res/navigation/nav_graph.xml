@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesListFragment">
+
+    <fragment
+        android:id="@+id/moviesListFragment"
+        android:name="com.sbaygildin.sequeniafilmexplorer.ui.movieslist.MoviesListFragment"
+        android:label="Фильмы"
+        tools:layout="@layout/fragment_movies_list" />
+
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.sbaygildin.sequeniafilmexplorer.ui.moviedetails.MovieDetailsFragment"
+        android:label="Movie Details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="film"
+            app:argType="com.sbaygildin.sequeniafilmexplorer.model.Film"
+            app:nullable="false" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_moviesListFragment_to_movieDetailsFragment"
+        app:destination="@id/movieDetailsFragment" />
+
+</navigation>

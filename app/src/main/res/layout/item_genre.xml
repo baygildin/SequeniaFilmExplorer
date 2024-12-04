@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/genreNameTextView"
+    style="@style/BodyTextStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/genre_background_selector"
+    android:gravity="start"
+    android:paddingVertical="8dp"
+    android:paddingStart="8dp"
+    android:textColor="@color/genre_text_selector"
+    tools:ignore="RtlSymmetry" />
