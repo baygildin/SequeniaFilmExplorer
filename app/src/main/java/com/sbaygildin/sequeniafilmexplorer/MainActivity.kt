@@ -19,10 +19,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbarLayout.toolbar)
-        supportActionBar?.setDisplayHomeAsUpEnabled(false)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        binding.toolbarLayout.backButton.setOnClickListener {
+        binding.toolbarLayout.toolbar.setNavigationOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
 
@@ -35,13 +35,13 @@ class MainActivity : AppCompatActivity() {
                 when (destination.id) {
                     R.id.moviesListFragment -> {
                         binding.toolbarLayout.toolbarTitle.text = getString(R.string.txt_films)
-                        binding.toolbarLayout.backButton.visibility = View.GONE
+                            binding.toolbarLayout.toolbar.visibility = View.GONE
                     }
                     R.id.movieDetailsFragment -> {
                         val film = arguments?.getParcelable<Film>(getString(R.string.film))
                         binding.toolbarLayout.toolbarTitle.text = film?.name
                             ?: getString(R.string.txt_details)
-                        binding.toolbarLayout.backButton.visibility = View.VISIBLE
+                        binding.toolbarLayout.toolbar.visibility = View.VISIBLE
                     }
                 }
             }
